@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valley-Wide Brick Campaign Display - QR Code Added</title>
+    <title>Valley-Wide Brick Campaign Display - Two QR Codes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -84,7 +84,7 @@
 
         <!-- Brick Examples Section --><div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             
-            <!-- Left Column: 4x8 Bricks --><div class="flex flex-col items-center gap-8">
+            <!-- Left Column: 4x8 Bricks and Preview QR --><div class="flex flex-col items-center gap-8">
                 <!-- 4x8 Brick Example - Text Only --><div class="w-full">
                     <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">$100 - 4" x 8" Brick (Text Only)</h2>
                     <p class="text-gray-600 text-center mb-4">(4 lines, 20 characters/line)</p>
@@ -116,6 +116,14 @@
                             <span>ALAMOSA, CO</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- NEW: Preview Your Brick QR Code --><div class="w-full mt-10 text-center p-4 bg-gray-50 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Preview Your Brick!</h3>
+                    <div class="w-40 h-40 mx-auto">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://project-vwhs.github.io/bricksim/" alt="QR Code to Brick Simulator" class="w-full h-full object-contain">
+                    </div>
+                    <p class="text-md text-gray-700 mt-2 break-words">project-vwhs.github.io/bricksim/</p>
                 </div>
             </div>
 
@@ -176,11 +184,11 @@
                 <!-- Book --><svg class="svg-icon-sm text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
             </div>
 
-            <!-- Call to Action --><div class="mt-12 bg-gray-100 p-8 rounded-lg border border-gray-200">
+            <!-- Main Order QR Code and Call to Action --><div class="mt-12 bg-gray-100 p-8 rounded-lg border border-gray-200">
                 <h2 class="text-3xl font-bold text-gray-900">Ready to build our future?</h2>
                 <p class="text-xl text-gray-700 mt-2">Scan the QR code or visit our website to order your brick today.</p>
                 
-                <!-- QR Code Image --><div class="w-48 h-48 mx-auto mt-6">
+                <!-- Main Order QR Code Image --><div class="w-48 h-48 mx-auto mt-6">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://polarengraving.com/valleywidehealthsystems" alt="QR Code to Valley-Wide Health Systems Brick Order Form" class="w-full h-full object-contain">
                 </div>
                 
